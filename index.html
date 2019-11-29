@@ -2,16 +2,55 @@
 <html>
 <head>
 	<title>Shreyansh Varshney</title>
+	<script src="https://use.fontawesome.com/7ee029a83b.js"></script>
 	<style type="text/css">
+		html{
+			height:100%;
+		}	
 		
 		body{
 			background-image:url("./images/construction.jpg");
 			background-size:cover;
 			background-repeat:no-repeat;
+			height:100%;
+			display:grid;
+			grid-template-rows:100px 300px ;
+			/* grid-template-columns:; */
+			grid-template-areas:"heading"
+								"footer" ;
 		}
+
+		h1{
+			grid-area:heading;
+			color:white; 
+			font-family: consolas;
+			text-align:center;
+		}
+		footer{
+			grid-area:footer;
+			display:flex;
+			flex-direction:column;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		.footer-links{
+				display: flex;
+				flex-direction: row;
+			}
 	</style>
 </head>
 <body>
-	<center><h1 style="color:white; font-family: consolas;">This is under construction due to some issues.</h1></center>
+	<h1>This is under construction due to some issues</h1>
+	<footer>
+		<div class="footer-content">
+			<p style="color:white;">@ 2019 by Shreyansh Varshney.</p>
+		</div>
+		<div class="footer-links">
+			<a href="./images/resume.pdf"><i class="fa fa-file fa-2x" style="color:white;"></i></a>
+			<a href="https://github.com/shreyanshvarshney"><i class="fa fa-github fa-2x" style="color:white; padding-left:1rem;"></i></a>
+			<a href="https://www.linkedin.com/in/shreyansh-v-89a9a6172/" style="color:white; padding-left:1rem;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+		</div>
+	</footer>
+
 </body>
 </html>
