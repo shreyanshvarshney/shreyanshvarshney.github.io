@@ -25,6 +25,8 @@
 			color:white; 
 			font-family: consolas;
 			text-align:center;
+			position:relative;
+  			animation: lefttoright 2s 1 ease-in-out;
 		}
 		footer{
 			grid-area:footer;
@@ -37,6 +39,11 @@
 				display: flex;
 				flex-direction: row;
 			}
+
+		@keyframes lefttoright {
+  			0%{ opacity:0; left: -400px;}
+  			100%{opacity:1; left: 0px;}
+		}
 	</style>
 </head>
 <body>
@@ -48,7 +55,7 @@
 		<div class="footer-links">
 			<a href="./images/resume.pdf"><i class="fa fa-file fa-2x" style="color:white;"></i></a>
 			<a href="https://github.com/shreyanshvarshney"><i class="fa fa-github fa-2x" style="color:white; padding-left:1rem;"></i></a>
-			<a href="https://www.linkedin.com/in/shreyanshvarshney" style="color:white; padding-left:1rem;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+			<a href="https://www.linkedin.com/in/shreyansh-v-89a9a6172/" style="color:white; padding-left:1rem;"><i class="fa fa-linkedin-square fa-2x"></i></a>
 		</div>
 	</footer>
 
